@@ -1,0 +1,71 @@
+.pickups
+  +rem('height', 218px)
+  overflow: hidden
+  +rem('margin-bottom', 40px)
+  +rem('margin-left', -1px)
+  +rem('margin-top', -1px)
+  +screen-xs
+    +rem('margin-bottom', 16px)
+.pickup
+  overflow: hidden
+  +rem('padding-left', 1px)
+  +rem('padding-top', 1px)
+  +top(-1px)
+  +left(-1px)
+.pickup__content
+  +clearfix
+  +border(all, 4px, solid, $black)
+.pickup__label
+  +text-block(12px, 22px)
+  +inline-block(bottom)
+  +absolute(left, -34px, top, 8px)
+  background-color: $yellow
+  +rem('padding', 2px 32px 0)
+  +rotate(-34deg)
+  +tauri(bold)
+  +box-shadow( 0 1px 0 1px shade($yellow, 10%))
+.pickup__header
+  background-color: #eeeeee
+  color: $black
+  +tauri(bold)
+  +rem('padding', 4px 16px)
+  +clearfix
+  +border(bottom, 2px, dotted, $black)
+.pickup__date-time
+  +tauri(bold)
+  +inline-block(bottom)
+  +text-block(16px, 24px)
+  float: right
+  i
+    +rem('margin-right', 6px)
+  .is-date
+    +rem('margin-right', 16px)
+.pickup__body
+  +rem('padding', 8px 16px)
+  +rem('height', 160px)
+  +clearfix
+.pickup__speaker
+  +rem('padding-left', 72px)
+  +rem('min-height', 56px)
+  +rem('margin-bottom', 16px)
+  +relative
+.pickup__speaker-image
+  +rem('width', 56px)
+  +absolute(left, 0, top, 0)
+.pickup__speaker-name
+  +text-block(20px, 1.5, false, $black)
+  +rem('padding-bottom', 2px)
+  +tauri(bold)
+  text-decoration: none
+  +border(bottom, 2px, solid, $black)
+  display: block
+.pickup__title
+  +text-block(16px, 1.5)
+  +rem('padding-left', 24px)
+  +rem('margin-bottom', 16px)
+  +relative
+  &:after
+    +fa
+    content: "\f10d"
+    +absolute(left, 0, top, 2px)
+    +text-block(16px, 1)

@@ -1,0 +1,21 @@
+.footer
+  clear: both
+  +clearfix
+  +border(top, 2px, solid, $black)
+.footer__wrapper
+  +rem('margin-top', 64px)
+  +rem('margin-bottom', 64px)
+  +relative
+  +screen-xs
+    +rem('padding-top', 32px)
+    +rem('margin-bottom', 32px)
+.footer__about-author
+  +text-block(14px, 1, false, right)
+  +screen-xs
+    +rem('padding-top', 24px)
+    position: static
+    text-align: center
+.footer__copyright
+  display: block
+  +tauri
+  +rem('margin-bottom', 16px)

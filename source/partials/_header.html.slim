@@ -1,0 +1,16 @@
+header.header
+  .wrapper.header__wrapper
+    i.fa.fa-bars.header__open-global-nav-icon.js-open-slide-nav.visible-xs-block
+    .row
+      .col-sm-8
+        h1.header__site-title
+          = link_to "/", class: ("header__site-title-link #{lang_class(data.site.event.title)}") do
+            = data.site.event.title
+            = image_tag('ruby.svg', class: "header__ruby")
+      .col-sm-4
+        .header__infomations
+          ul.header__infomations-items
+            li.header__infomations-item.is-event-dates= data.site.event.dates
+            li.header__infomations-item.is-event-place= data.site.event.place
+        .header__registration
+          = link_to 'Registration', data.site.event.ticket_url, class: "header__registration-link"

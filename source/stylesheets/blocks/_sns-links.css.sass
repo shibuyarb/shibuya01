@@ -1,0 +1,20 @@
+.sns-links
+  text-align: right
+  +screen-xs
+    text-align: center
+.sns-links__item
+  +inline-block(bottom)
+  +rem('margin-right', 8px)
+  +relative
+  +screen-xs
+    +rem('margin-right', 4px)
+  &:last-child
+    margin-right: 0
+    +screen-xs
+      +rem('margin-right', 4px)
+.sns-links__link
+  display: block
+  background-color: $black
+  +text-block(14px, 28px, false, $white, center)
+  +size(28px, 28px)
+  +border-radius(50%)

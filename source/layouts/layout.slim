@@ -1,0 +1,27 @@
+doctype html
+html
+  = partial 'partials/head'
+  body
+    - if home?
+      = partial 'partials/home_header'
+      = partial 'partials/global_nav'
+      = partial 'partials/pickups', locals: {articles: articles}
+    - else
+      = partial 'partials/header'
+      = partial 'partials/global_nav'
+    .body
+      - if home?
+        = yield
+      - elsif page?
+        article.article
+          .wrapper.article__wrapper
+            header.page__header
+              h1.page__title
+                = current_page.data.title
+            div class=(nav_page? ? 'nav-page__body':'article__body')
+              = yield
+      - elsif not articles?
+        = partial("partials/article", locals: {article: current_article})
+      - else
+        = yield
+    = partial 'partials/footer'

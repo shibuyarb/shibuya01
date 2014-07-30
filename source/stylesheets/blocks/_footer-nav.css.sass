@@ -1,0 +1,24 @@
+.footer-nav
+  +rem('margin-bottom', 24px)
+  clear: both
+  +tauri
+  &:last-child
+    margin-bottom: 0
+  +screen-xs
+    +rem('margin-bottom', 8px)
+.footer-nav__title
+  +text-block(16px, 1.6, 8px)
+.footer-nav__title-icon
+  +rem('margin-right', 8px)
+.footer-nav__item
+  +rem('margin-bottom', 16px)
+.tags-nav__item
+  +inline-block(bottom)
+.tags-nav__link
+  float: left
+  +rem('margin-right', 24px)
+  +text-block(14px, 1.6, false, $black)
+  +hover-link
+  +screen-xs
+    +rem('margin-bottom', 8px)
+    display: block

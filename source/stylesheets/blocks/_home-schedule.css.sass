@@ -1,0 +1,35 @@
+.home-schedule
+  +rem('margin-bottom', 48px)
+.home-schedule__title
+  +tauri(bold)
+  +text-block(20px, 1.5, 8px)
+.home-schedule__items
+  +border(left top right, 4px, solid, $black)
+.home-schedule-content
+  +border(bottom, 2px, solid, $black)
+  +rem('padding', 6px 8px)
+  color: $black
+  +relative
+  +text-block(16px, 1.5, false, bold)
+  &:last-child
+    +border(bottom, 4px, solid, $black)
+  &.is-small
+    .home-schedule-content__header
+      border-bottom: 0
+  &:nth-child(even)
+    background-color: #eeeeee
+.home-schedule-content__time
+  +rem('margin-right', 24px)
+.home-schedule-content__image
+  +rem('width', 24px)
+  +rem('margin-left', 8px)
+  +absolute(right, 8px, top, 4px)
+  float: right
+  +border-radius(50%)
+.home-schedule-content__name
+  +text-block(14px, 1.5, 8px)
+.home-schedule-content__name-link
+  color: $black
+  +hover-link
+  +absolute(right, 40px, bottom, 4px)
+  +text-block(12px, 1.5)

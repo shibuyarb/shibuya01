@@ -1,0 +1,19 @@
+.pagenate
+  +rem('margin-bottom', 24px)
+  text-align: right
+.pagenate__item
+  +inline-block(bottom)
+.pagenate__link,
+.pagenate__current
+  +tauri(700)
+  display: block
+  +border(all, 2px, solid, $black)
+  +rem('width', 24px)
+  +rem('height', 24px)
+  +text-block(14px, 24px, false, center)
+  text-decoration: none
+.pagenate__link
+  color: $black
+.pagenate__current
+  background-color: $black
+  color: $white

@@ -1,0 +1,129 @@
+.article__wrapper
+  +relative
+.article__content
+  +rem('max-width', 640px)
+  float: right
+  +rem('padding-left', 24px)
+  +screen-xs
+    padding-left: 0
+.article__header
+  +rem('margin-bottom', 24px)
+  +screen-xs
+    +rem('margin-bottom', 8px)
+.article__title
+  +text-block(32px, 1.6, false, bold)
+  +bold-ja
+  +screen-xs
+    +text-block(26px, 1.6, 16px, bold)
+    +border(bottom, 1px, solid, $black)
+  &:after
+    content: "\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d\002d"
+    display: block
+    overflow: hidden
+    height: 0
+.article__title-link
+  text-decoration: none
+  color: $black
+
+.article__created-at
+  +inline-block(bottom)
+  +text-block(14px, 1, 32px, $black)
+  +rem('padding', 5px 8px)
+  +border(all, 2px, solid, $black)
+  +tauri(bold)
+  +top(9px)
+  +nowrap
+  +screen-xs
+    +text-block(12px, 1, 16px, $black)
+    +rem('padding', 3px 6px)
+.article__tags-item
+  display: block
+  +screen-xs
+    +inline-block(bottom)
+    +rem('margin-right', 8px)
+.article__tags-link
+  +inline-block(bottom)
+  +relative
+  color: $black
+  +hover-link
+  +text-block(16px, 1.6)
+  +rem('margin-bottom', 12px)
+  +nowrap
+  &:before
+    +fa
+    content: "\f02b"
+    +rem('margin-right', 6px)
+
+.article__body
+  +rem('margin-bottom', 80px)
+  +screen-xs
+    +rem('margin-bottom', 40px)
+  >*:last-child
+    margin-bottom: 0
+  .highlight
+    background-color: $black
+  p
+    +text-block($ms-base, 1.9, 1.6)
+  +screen-xs
+    p
+      +text-block($ms-base, 1.8, 1.4)
+  img
+    max-width: 100%
+    display: block
+    +horizontal-mg-auto
+    +rem('margin-bottom', 32px)
+  blockquote
+    +rem('padding', 12px 22px 12px 40px)
+    +rem('margin-top', 48px)
+    +rem('margin-bottom', 40px)
+    +relative
+    +border(all, 2px, solid, $black)
+    font-style: italic
+    +screen-xs
+      +rem('padding', 8px 16px 8px 32px)
+      +rem('margin-top', 38px)
+      +rem('margin-bottom', 30px)
+    >*
+      margin-bottom: 0
+    &:before
+      +fa
+      content: "\f10d"
+      +absolute(left, 0, top, 0)
+      +rem('width', 28px)
+      +rem('height', 28px)
+      +text-block(16px, 28px, false, center)
+      color: $white
+      background-color: $black
+      +screen-xs
+        +text-block(14px, 22px, false, center)
+        +rem('width', 22px)
+        +rem('height', 22px)
+  h2
+    +text-block(26px, 1.6, .6, bold)
+    +screen-xs
+      +text-block(20px, 1.6, false, bold)
+  h3
+    +text-block(22px, 1.6, .6, bold)
+    +screen-xs
+      +text-block(18px, 1.6, false, bold)
+  h4
+    +text-block(18px, 1.6, .6, bold)
+    +screen-xs
+      +text-block(16px, 1.6, false, bold)
+  >ul
+    +list(22px, 32px, fa, \f0da, 14px, 7px, 20px)
+  >ol
+    +list(22px, 32px, decimal, outside)
+  li
+    +text-block(16px, 1.8, .8)
+    +relative
+    +screen-xs
+      +text-block(14px, 1.8, .8)
+    &:last-child
+      margin-bottom: 0
+    >ul
+      +list(22px, 32px, fa, \f10c, 9px, 10px, 24px)
+    >ul,
+    >ol
+      +rem('margin-top', 12px)
+      +rem('margin-left', 32px)

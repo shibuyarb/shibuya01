@@ -1,0 +1,15 @@
+url: http://
+
+description: shibuya.rb
+event:
+  title: SHIBUYA RUBY KAIGI
+  dates: Nov 1st, 2014
+  start_time: 10:00
+  place: Shidax Culture Hall
+  city: Shibuya Tokyo
+  ticket_url: http://fjord.jp
+  author: shibuya.rb
+  author_url: http://fjord.jp
+  twitter_id: machida
+  facebook_id: teppeimachida
+  github_url: https://github.com/machida/nolla

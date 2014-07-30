@@ -1,0 +1,15 @@
+header.home-header
+  .wrapper.home-header__wrapper
+    = image_tag('ruby.svg', class: "home-header__ruby")
+    h2 class= "home-header__site-copy #{lang_class(data.site.event.title)}"
+      = data.site.description
+    h1.home-header__site-title
+      = link_to data.site.event.title, "/", class: ("home-header__site-title-link #{lang_class(data.site.event.title)}")
+    h3.home-header__event-dates= data.site.event.dates
+    h4.home-header__event-place
+      = data.site.event.place
+      span.is-city= data.site.event.city
+    .home-header__registration-wrapper.is-center-wrapper
+      = link_to data.site.event.ticket_url, class: "home-header__registration" do
+        span.home-header__registration-text Registration
+    i.fa.fa-bars.header__open-global-nav-icon.js-open-slide-nav.visible-xs-block

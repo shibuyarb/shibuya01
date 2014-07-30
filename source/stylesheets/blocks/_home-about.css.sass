@@ -1,0 +1,26 @@
+.home-about
+  +rem('margin-bottom', 48px)
+  +border(all, 4px, solid, $black)
+  +rem('padding', 8px 16px)
+.home-about__title
+  +tauri(bold)
+  +text-block(20px, 1.5, 16px)
+  +border(bottom, 1px, solid, $black)
+.home-about__body
+  +border(bottom, 1px, solid, $black)
+  +rem('margin-bottom', 16px)
+  +rem('padding-bottom', 16px)
+  p
+    +text-block(16px, 1.8, 1.4)
+  >*:last-child
+    margin-bottom: 0
+.home-about__author-name
+  +inline-block(bottom)
+  +rem('font-size', 14px)
+.home-about__author-icon
+  +rem('width', 32px)
+  +rem('margin-right', 8px)
+.home-about__footer
+  text-align: right
+.home-about__author-name
+  +top(-4px)

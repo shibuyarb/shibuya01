@@ -1,0 +1,22 @@
+.wrapper
+  .pickups
+    .row
+      - articles.each do |article|
+        - if article.data.tags.include?('pickup')
+          .col-sm-4.col-xs-12
+            .pickup
+              .pickup__content
+                .pickup__label KYENOTE
+                header.pickup__header
+                  h3.pickup__date-time
+                    span.is-date
+                      i.fa.fa-calendar-o
+                      = article.data.p_date
+                    span.is-time
+                        i.fa.fa-clock-o.fa-lg
+                        = article.data.p_time
+                .pickup__body
+                  .pickup__speaker
+                    = image_tag(article.data.image, class: "pickup__speaker-image")
+                    h2= link_to article.data.name, article.url, class: "pickup__speaker-name"
+                  h3.pickup__title= article.title

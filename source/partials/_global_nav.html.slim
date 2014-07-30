@@ -1,0 +1,15 @@
+nav.global-nav.js-slide-nav
+  .wrapper
+    i.fa.fa-times.js-open-slide-nav.visible-xs-block.global-nav__close-icon
+    ul.global-nav__items
+      li.global-nav__item
+        = link_to "/", class: ("global-nav__link #{is_page_current('index.html')}") do
+          i.fa.fa-home
+      li.global-nav__item
+        = link_to "Schedule", "/pages/schedule.html", class: ("global-nav__link #{is_page_current('pages/schedule.html')}")
+      li.global-nav__item
+        = link_to "Access", "/pages/access.html", class: ("global-nav__link #{is_page_current('pages/access.html')}")
+      li.global-nav__item
+        = link_to "Speakers", "/pages/speakers.html", class: ("global-nav__link #{is_page_current('pages/speakers.html')}")
+      li.global-nav__item
+        = link_to "Sponsors", "/pages/sponsors.html", class: ("global-nav__link #{is_page_current('pages/sponsors.html')}")

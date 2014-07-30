@@ -1,0 +1,63 @@
+body
+  overflow-x: hidden
+  width: 100%
+  +transition(.2s)
+  background-color: $white
+  &.is-slided
+    +rem('margin-left', 300px)
+    overflow: hidden
+.header
+  +box-sizing(border-box)
+  +rem('padding-bottom', 24px)
+  background-color: #FFFF98
+  +screen-xs
+    +rem('height', 160px)
+.header__wrapper
+  +rem('padding-top', 32px)
+  +relative
+  +screen-xs
+    +rem('padding-top', 32px)
+.header__site-title
+  +text-block(48px, 1.4, false)
+  +tauri(bold)
+  +relative
+  +rem('padding-left', 68px)
+  +screen-xs
+    +text-block(60px, 1.3)
+.header__site-title-link
+  text-decoration: none
+  color: $black
+.header__ruby
+  +rem('width', 52px)
+  +absolute(left, 0, top, 14px)
+.header .header__open-global-nav-icon
+  display: block
+  +text-block(32px, 50px)
+  +rem('width', 50px)
+  +rem('height', 50px)
+  +absolute(left, 20px, top, 0px)
+.header .header__global-nav-close-icon
+  display: block
+  +absolute(right, 0, top, 0, 2)
+  +text-block(32px, 50px, false, $white, center)
+  +rem('width', 50px)
+  +rem('height', 50px)
+.header__infomations
+  +rem('margin-bottom', 8px)
+.header__infomations-item
+  +inline-block(bottom)
+  +tauri(bold)
+  +text-block(20px, 1.5, false)
+  &.is-event-dates
+    +rem('margin-right', 8px)
+.header__registration
+  text-align: center
+.header__registration-link
+  +inline-block(bottom)
+  background-color: $pink
+  color: $black
+  text-decoration: none
+  +text-block(16px, 2)
+  +tauri(bold)
+  +horizontal-pd(12px)
+  +border(all, 4px, solid, $black)

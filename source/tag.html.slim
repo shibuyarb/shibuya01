@@ -1,0 +1,15 @@
+---
+pageable: true
+per_page: 1
+---
+header.page-header
+  .wrapper.page-header__wrapper
+    h1.page-header__title Articles tagged "#{tagname}"
+
+= partial("partials/pagenate", locals: {prev_page: prev_page, next_page: next_page, page_number: page_number, num_pages: num_pages})
+
+article.article
+  - page_articles.each_with_index do |article, i|
+    = partial("partials/article", locals: {article: article})
+
+= partial("partials/pagenate", locals: {prev_page: prev_page, next_page: next_page, page_number: page_number, num_pages: num_pages})

@@ -1,0 +1,26 @@
+.pagenate
+  .pagenate__wrapper.wrapper
+    ul.pagenate__items
+      li.pagenate__item class=(prev_page ? "" : "is-hidden")
+        - if prev_page
+          = link_to prev_page.url, class: "pagenate__link" do
+            i.fa.fa-angle-left
+        - else
+          span Prev
+      - if next_page || prev_page
+        - (page_number - 2 .. page_number + 2).select{|i| i > 0 && i <= num_pages}.each do |i|
+          - if i == page_number
+            li.pagenate__item
+              span.pagenate__current= i
+          - else
+            li.pagenate__item
+              - p = nil
+              - (i ... page_number).each do p = p ? p.metadata[:locals]['prev_page'] : prev_page; end
+              - (page_number ... i).each do p = p ? p.metadata[:locals]['next_page'] : next_page; end
+              =link_to "#{i}", p && p.url, class: "pagenate__link"
+      li.pagenate__item class=(next_page ? "" : "is-hidden")
+        - if next_page
+          =link_to next_page.url, class: "pagenate__link" do
+            i.fa.fa-angle-right
+        - else
+          span Next

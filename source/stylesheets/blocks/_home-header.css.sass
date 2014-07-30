@@ -1,0 +1,104 @@
+.home-header
+  background-color: #FFFF98
+  +screen-xs
+    +rem('margin-bottom', 24px)
+    +border(bottom, 2px, solid, $black)
+.home-header__wrapper
+  +relative
+  +box-sizing(border-box)
+  +rem('padding-top', 32px)
+  +rem('padding-bottom', 72px)
+  +screen-xs
+    +rem('padding-top', 16px)
+    +rem('padding-bottom', 24px)
+.header__open-global-nav-icon
+  +absolute(left, 8px, top, 8px)
+  +text-block(28px, 1)
+.home-header__ruby
+  display: block
+  +rem('width', 64px)
+  +horizontal-mg(auto)
+  +rem('margin-bottom', 8px)
+  +screen-xs
+    +rem('width', 40px)
+    +rem('margin-bottom', 4px)
+.home-header__site-title
+  +text-block(72px, 1.4, false, center)
+  +tauri(bold)
+  +screen-xs
+    +text-block(28px, 1.3)
+.home-header__site-title-link
+  text-decoration: none
+  color: $black
+.home-header__site-copy
+  +text-block(14px, 1.2, 12px, center)
+  +tauri(bold)
+  +screen-xs
+    +text-block(10px, 1.2, 8px, center)
+.home-header__event-dates
+  +tauri(bold)
+  +text-block(48px, 1.5, 8px, center, $black)
+  +screen-xs
+    +text-block(22px, 30px, 0px)
+.home-header__event-place
+  +tauri(bold)
+  +text-block(32px, 1.5, 24px, center, $black)
+  +screen-xs
+    +text-block(18px, 30px, 16px)
+  .is-city
+    +text-block(18px)
+    +rem('margin-left', 16px)
+    +screen-xs
+      +text-block(14px)
+      +rem('margin-left', 8px)
+.home-header__registration
+  +border(all, 4px, solid, $black)
+  +tauri(bold)
+  +text-block(24px, 48px, false, center, $black)
+  +rem('width', 260px)
+  text-decoration: none
+  +inline-block(bottom)
+  +relative
+  background-color: $pink
+  +transition(.1s)
+
+  .home-header__registration-text
+    +relative(2)
+  &:hover
+    background-color: $pink
+    +text-shadow(none)
+  &:active
+    +top(4px)
+    +text-shadow(rgba(255, 255, 255, 1) 0 0 8px)
+    color: $white
+    &:after
+      display: none
+  &:before
+    +absolute(top, 0, bottom, 0)
+    content: ""
+    width: 100%
+    display: block
+    background-image: image_url('test.svg')
+  &:after
+    +absolute(left, -4px, bottom, -12px)
+    content: ""
+    width: 100%
+    height: 0
+    +border(all, 4px, solid, transparent)
+    border-top-color: $black
+    display: block
+    +rem('width', 260px)
+
+
+.home-header .home-header__open-global-nav-icon
+  display: block
+  +text-block(32px, 50px)
+  +rem('width', 50px)
+  +rem('height', 50px)
+  +absolute(left, 20px, top, 0px)
+.home-header .home-header__global-nav-close-icon
+  display: block
+  +absolute(right, 0, top, 0, 2)
+  +text-block(32px, 50px, false, $white, center)
+  +rem('width', 50px)
+  +rem('height', 50px)

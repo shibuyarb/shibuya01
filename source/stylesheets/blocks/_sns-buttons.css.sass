@@ -1,0 +1,21 @@
+.sns-buttons
+  +rem('margin-bottom', 24px)
+  +screen-xs
+    margin-bottom: 0
+    +rem('margin-left', 8px)
+    +inline-block(bottom)
+    +bottom(-8px)
+.sns-buttons__item
+  +inline-block(bottom)
+  +rem('margin-right', 8px)
+  +relative
+.sns-buttons__entry-link
+  display: block
+  background-color: $black
+  +text-block(14px, 28px, false, $white, center)
+  +size(28px, 28px)
+  +border-radius(50%)
+.sns-buttons__search-link
+  display: block
+  +text-block(9px, 14px, false, center, $black)
+  text-decoration: none
