@@ -34,3 +34,5 @@ gem "modular-scale"
 gem "SassyLists"
 gem "toolkit"
 gem "sassy-maps"
+
+gem "middleman-deploy"

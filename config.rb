@@ -107,6 +107,11 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+end
+
 helpers do
   def home?
     current_page.path == ('index.html')
