@@ -18,5 +18,5 @@
                 .pickup__body
                   .pickup__speaker
                     = image_tag(article.data.image, class: "pickup__speaker-image")
-                    h2= link_to article.data.name, article.url, class: "pickup__speaker-name"
+                    h2= link_to article.data.name, article, class: "pickup__speaker-name"
                   h3.pickup__title= article.title
