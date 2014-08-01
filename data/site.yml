@@ -9,7 +9,7 @@ event:
   city: Shibuya Tokyo
   ticket_url: http://fjord.jp
   author: shibuya.rb
-  author_url: http://fjord.jp
-  twitter_id: machida
-  facebook_id: teppeimachida
-  github_url: https://github.com/machida/nolla
+  author_url: http://shibuyarb.doorkeeper.jp/
+  facebook_group_id: shibuya.rb
+  twitter_id: search?f=realtime&q=%23shibuyarb
+  github_url: https://github.com/shibuyarb/shibuya01

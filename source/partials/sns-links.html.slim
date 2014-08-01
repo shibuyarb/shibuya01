@@ -6,7 +6,7 @@ nav.sns-links
           i.fa.fa-twitter
     - if data.site.event.twitter_id
       li.sns-links__item
-        = link_to "https://www.facebook.com/#{data.site.event.facebook_id}", class: "sns-links__link" do
+        = link_to "https://www.facebook.com/groups/#{data.site.event.facebook_id}", class: "sns-links__link" do
           i.fa.fa-facebook
     - if data.site.event.github_url
       li.sns-links__item
