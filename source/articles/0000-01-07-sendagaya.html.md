@@ -4,7 +4,7 @@ name: Teppei Machida
 tags: schedule, pickup
 pick_up_label: Speaker
 image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
-p_date: 12/31
+p_date: 1l/1
 p_time: '14:05'
 length: 5
 ---

@@ -1,7 +1,7 @@
 ---
-title: Shibuya Lunch
+title: shibuyarb lunch
 tags: small, schedule
-p_date: 12/31
+p_date: 11/1
 p_time: '11:30'
 length: 90
 id: 1

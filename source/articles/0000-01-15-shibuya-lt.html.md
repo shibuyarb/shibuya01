@@ -1,7 +1,7 @@
 ---
 title: Shibuya LT
 tags: schedule
-p_date: 12/31
+p_date: 11/1
 p_time: '16:30'
 length: 30
 ---
