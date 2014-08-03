@@ -11,25 +11,33 @@ body
   +rem('padding-bottom', 24px)
   background-color: #FFFF98
   +screen-xs
-    +rem('height', 160px)
+    height: auto
+    +rem('padding-bottom', 8px)
 .header__wrapper
   +rem('padding-top', 32px)
   +relative
   +screen-xs
-    +rem('padding-top', 32px)
+    +rem('padding-top', 16px)
 .header__site-title
   +text-block(48px, 1.4, false)
   +tauri(bold)
   +relative
   +rem('padding-left', 68px)
   +screen-xs
-    +text-block(60px, 1.3)
+    padding-left: 0
+    +text-block(24px, 1.3, false, center)
 .header__site-title-link
   text-decoration: none
   color: $black
 .header__ruby
   +rem('width', 52px)
   +absolute(left, 0, top, 14px)
+  +screen-xs
+    +rem('width', 38px)
+    position: static
+    display: block
+    +horizontal-mg(auto)
+    +rem('margin-bottom', 8px)
 .header .header__open-global-nav-icon
   display: block
   +text-block(32px, 50px)
