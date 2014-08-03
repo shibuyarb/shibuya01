@@ -2,7 +2,7 @@ header.home-header
   .wrapper.home-header__wrapper
     = image_tag('ruby.svg', class: "home-header__ruby")
     h2 class= "home-header__site-copy #{lang_class(data.site.event.title)}"
-      = data.site.description
+      = data.site.event.author
     h1.home-header__site-title
       = link_to data.site.event.title, "/", class: ("home-header__site-title-link #{lang_class(data.site.event.title)}")
     h3.home-header__event-dates= data.site.event.dates
