@@ -1,5 +1,11 @@
 head
   meta charset="utf-8"
+  meta name="keywords" content="#{data.site.keywords}"
+  meta name="description" content="#{data.site.description}"
+  meta property="og:type" content="website"
+  meta property="og:title" content="#{data.site.keywords}"
+  meta property="og:site_name" content="#{data.site.keywords}"
+  meta property="og:image" content="#{image_path('ruby.svg')}"
   meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
   meta name="viewport" content="width=device-width,initial-scale=1"
   = stylesheet_link_tag "application"

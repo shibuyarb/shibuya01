@@ -1,15 +1,13 @@
-url: http://
-
-description: shibuya.rb
+title: 渋谷Ruby会議01
+keywords: Ruby 地域Ruby会議 Shibuya.rb 渋谷Ruby会議01
+description: 毎月第 3 水曜に開催している shibuya.rb の拡大版です。Shibuya.rb メンバーの発表と近隣地域 Ruby コミュニティからの招待講演を行います。
 event:
-  title: SHIBUYA RUBY KAIGI
+  title: 渋谷Ruby会議01
   dates: Nov 1st, 2014
-  start_time: 10:00
-  place: Shidax Culture Hall
+  place: SHIDAX CULTURE HALL
   city: Shibuya Tokyo
-  ticket_url: http://fjord.jp
+  ticket_url: #
   author: shibuya.rb
-  author_url: http://shibuyarb.doorkeeper.jp/
   facebook_group_id: shibuya.rb
   twitter_id: search?f=realtime&q=%23shibuyarb
   github_url: https://github.com/shibuyarb/shibuya01
