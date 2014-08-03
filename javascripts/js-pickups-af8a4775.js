@@ -1,0 +1,1 @@
+(function(){var n;n=function(){var n,t,r;return r=[],n=0,$(".pickup").each(function(){return r.push($(this).html())}),r.sort(function(){return Math.random()-Math.random()}),$(".pickup").empty(),t=0,$(".pickup").each(function(){return $(this).append(r[t]),t++})},$(function(){return setInterval(n,1e4)})}).call(this);
