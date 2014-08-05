@@ -26,7 +26,7 @@ gem "redcarpet"
 
 # Use oulu
 # gem 'middleman-oulu', path: '../middleman-oulu'
-gem 'middleman-oulu', '~> 0.3.20', github: 'oulu/middleman-oulu'
+gem 'middleman-oulu', '~> 0.3.23', github: 'oulu/middleman-oulu'
 
 gem "ceaser-easing"
 gem "compass-rgbapng"
