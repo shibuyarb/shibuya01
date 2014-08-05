@@ -13,12 +13,12 @@ html
       - if home?
         = yield
       - elsif page?
-        article.article
-          .wrapper.article__wrapper
+        article.page
+          .wrapper.page__wrapper
             header.page__header
               h1.page__title
                 = current_page.data.title
-            div class=(nav_page? ? 'nav-page__body':'article__body')
+            div class=(nav_page? ? 'nav-page__body':'page__body')
               = yield
       - elsif not articles?
         = partial("partials/article", locals: {article: current_article})

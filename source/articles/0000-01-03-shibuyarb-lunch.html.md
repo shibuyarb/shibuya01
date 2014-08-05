@@ -3,7 +3,7 @@ title: shibuyarb lunch
 tags: small, schedule
 p_date: 11/1
 p_time: '11:30'
-length: 90
+p_length: 90
 id: 1
 ---
 

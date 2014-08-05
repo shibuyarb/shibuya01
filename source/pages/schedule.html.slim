@@ -5,10 +5,6 @@ title: Schedule
 .timetable
   .timetable__row
     .timetable__cell
-      .timetable__time-label 09:30
-    .timetable__cell
-      .timetable__time-label 10:00
-    .timetable__cell
       .timetable__time-label 10:30
     .timetable__cell
       .timetable__time-label 11:00
@@ -36,9 +32,4 @@ title: Schedule
       .timetable__time-label 16:30
     .timetable__cell
       .timetable__time-label 17:00
-    .timetable__cell
-      .timetable__time-label 17:30
-    .timetable__cell
-      .timetable__time-label 18:00
-  .timetable__cell
-    .timetable__time-label 18:30
+  = partial 'partials/schedule_schedule', locals: {articles: blog.articles}

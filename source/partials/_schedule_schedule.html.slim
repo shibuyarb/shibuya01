@@ -1,0 +1,16 @@
+.schedule-schedule
+  .schedule-schedule__items
+    - articles.sort_by(&:date).each do |article|
+      - if article.data.tags.include?('schedule')
+        .schedule-schedule-content class= "length-#{article.data.p_length}"
+          span.schedule-schedule-content__time
+            = article.data.p_time
+          span.schedule-schedule-content__title
+            = link_to article, class: "schedule-schedule-content__title-link" do
+              span class= "#{lang_class(article.title)}"
+                = article.title
+          - if article.data.name
+            span.schedule-schedule-content__speaker
+              - if article.data.image
+                = image_tag(article.data.image, class: "schedule-schedule-content__image")
+              = link_to article.data.name, article, class: "schedule-schedule-content__name-link"

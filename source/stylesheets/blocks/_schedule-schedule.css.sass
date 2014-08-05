@@ -1,0 +1,36 @@
+$five-minutes: 30px
+.schedule-schedule
+  +absolute(left, 0, top, 0, 2)
+  width: 100%
+  +box-sizing(border-box)
+  +rem('padding-left', 100px)
+  +screen-xs
+    +rem('padding-left', 60px)
+.schedule-schedule-content
+  +border(all, 4px, solid, $black)
+  border-top: none
+  +box-sizing(border-box)
+  background-color: rgba($yellow, .3)
+  +rem('padding', 10px)
+  +relative
+  &:nth-child(even)
+    background-color: rgba(tint($yellow, 40%), .3)
+  &:first-child
+    +border(top, 4px, solid, $black)
+  @for $i from 1 through 18
+    &.length-#{$i * 5}
+      +rem('height', $five-minutes * $i)
+.schedule-schedule-content__time
+  +tauri(bold)
+.schedule-schedule-content__speaker
+  +absolute(right, 10px, top, 10px)
+  +rem('width', 152px)
+.schedule-schedule-content__image
+  +size(40px)
+  +border-radius(50%)
+  display: block
+  +horizontal-mg(auto)
+  +rem('margin-bottom', 4px)
+.schedule-schedule-content__name-link
+  +text-block(14px, 1.6, false, center, $black)
+  +block-link

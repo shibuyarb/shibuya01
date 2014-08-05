@@ -1,8 +1,12 @@
+.timetable
+  +relative
 .timetable__cell
-  +rem('height', 120px)
+  +rem('height', 180px)
   +rem('padding-top', 10px)
   +box-sizing(border-box)
-  +border(bottom, 2px, solid, $black)
+  +border(bottom, 1px, dotted, $black)
+  &:first-child
+    +border(top, 1px, dotted, $black)
 .timetable__time-label
   +tauri(bold)
   +text-block(16px, 1.6)
