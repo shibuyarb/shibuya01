@@ -22,6 +22,8 @@ $five-minutes: 30px
       +rem('height', $five-minutes * $i)
 .schedule-schedule-content__time
   +tauri(bold)
+  display: block
+  +text-block(18px, 1.5, 8px)
 .schedule-schedule-content__speaker
   +absolute(right, 10px, top, 10px)
   +rem('width', 152px)
@@ -31,6 +33,11 @@ $five-minutes: 30px
   display: block
   +horizontal-mg(auto)
   +rem('margin-bottom', 4px)
+.schedule-schedule-content__title-link
+  +text-block(22px, 1.5, false, $black, bold)
+  text-decoration: none
+  &.is-en
+    +tauri(bold)
 .schedule-schedule-content__name-link
-  +text-block(14px, 1.6, false, center, $black)
+  +text-block(12px, 1.6, false, center, $black)
   +block-link

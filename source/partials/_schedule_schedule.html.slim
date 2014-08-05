@@ -6,9 +6,8 @@
           span.schedule-schedule-content__time
             = article.data.p_time
           span.schedule-schedule-content__title
-            = link_to article, class: "schedule-schedule-content__title-link" do
-              span class= "#{lang_class(article.title)}"
-                = article.title
+            = link_to article, class: "schedule-schedule-content__title-link #{lang_class(article.title)}" do
+              = article.title
           - if article.data.name
             span.schedule-schedule-content__speaker
               - if article.data.image
