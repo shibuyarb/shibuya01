@@ -2,43 +2,16 @@
 title: Speakers
 ---
 
-.timetable
-  .timetable__row
-    .timetable__cell
-      .timetable__time-label 09:30
-    .timetable__cell
-      .timetable__time-label 10:00
-    .timetable__cell
-      .timetable__time-label 10:30
-    .timetable__cell
-      .timetable__time-label 11:00
-    .timetable__cell
-      .timetable__time-label 11:30
-    .timetable__cell
-      .timetable__time-label 12:00
-    .timetable__cell
-      .timetable__time-label 12:30
-    .timetable__cell
-      .timetable__time-label 13:00
-    .timetable__cell
-      .timetable__time-label 13:30
-    .timetable__cell
-      .timetable__time-label 14:00
-    .timetable__cell
-      .timetable__time-label 14:30
-    .timetable__cell
-      .timetable__time-label 15:00
-    .timetable__cell
-      .timetable__time-label 15:30
-    .timetable__cell
-      .timetable__time-label 16:00
-    .timetable__cell
-      .timetable__time-label 16:30
-    .timetable__cell
-      .timetable__time-label 17:00
-    .timetable__cell
-      .timetable__time-label 17:30
-    .timetable__cell
-      .timetable__time-label 18:00
-  .timetable__cell
-    .timetable__time-label 18:30
+.home-schedule
+  h2.home-schedule__title Speakers
+  .home-schedule__items
+    - blog.articles.sort_by(&:date).each do |article|
+      - if article.data.tags.include?('speaker')
+        .home-schedule-content
+          span.home-schedule-content__time
+            = article.data.p_time
+          span.home-schedule-content__title= article.title
+          - if article.data.name
+            = link_to article.data.name, article, class: "home-schedule-content__name-link"
+          - if article.data.image
+            = image_tag(article.data.image, class: "home-schedule-content__image")

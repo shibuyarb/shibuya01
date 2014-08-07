@@ -1,7 +1,7 @@
 ---
 title: Key Session
 name: Teppei Machida
-tags: schedule, pickup
+tags: schedule, pickup, speaker
 pick_up_label: KeySession
 image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
 p_date: 11/1
