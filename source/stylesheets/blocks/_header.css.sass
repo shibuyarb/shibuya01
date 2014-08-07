@@ -39,12 +39,13 @@ body
     +horizontal-mg(auto)
     +rem('margin-bottom', 8px)
 .header .header__open-global-nav-icon
-  display: block
-  +text-block(32px, 50px)
-  +rem('width', 50px)
-  +rem('height', 50px)
-  +absolute(left, 20px, top, 0px)
-.header .header__global-nav-close-icon
+  +screen-xs
+    display: block
+    +text-block(32px, 50px)
+    +rem('width', 50px)
+    +rem('height', 50px)
+    +absolute(left, 20px, top, 0px, 2)
+.global-nav__close-icon
   display: block
   +absolute(right, 0, top, 0, 2)
   +text-block(32px, 50px, false, $white, center)

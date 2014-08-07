@@ -7,6 +7,9 @@
     background-color: $black
     height: 100%
     +fixed(left, -300px, top, 0)
+.is-slided
+  .global-nav
+    +fixed(left, 0, top, 0)
 .global-nav__items
   +screen-xs
     +rem('margin-left', 20px)
@@ -14,6 +17,8 @@
     +border(left, 4px, solid, shade($black, 20%))
 .global-nav__item
   +inline-block(bottom)
+  +screen-xs
+    display: block
 .global-nav__link
   display: block
   +text-block(24px, 46px, false, $black)
@@ -24,9 +29,13 @@
     color: $blue
     +relative
   +screen-xs
-    +text-block(18px, 54px, false, $white)
+    +text-block(18px, 54px, false, $white, left)
     &.is-current
       &:after
-        +rem('width', 12px)
-        +rem('height', 12px)
-        +absolute(left, -32px, top, 50%)
+        +size(12px)
+        +absolute(left, -8px, top, 50%)
+        +rem('margin-top', -6px)
+        content: ""
+        display: block
+        background-color: $blue
+        +border-radius(50%)
