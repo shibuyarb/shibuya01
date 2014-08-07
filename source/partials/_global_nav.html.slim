@@ -3,7 +3,7 @@ nav.global-nav.js-slide-nav
     i.fa.fa-times.js-open-slide-nav.visible-xs-block.global-nav__close-icon
     ul.global-nav__items
       li.global-nav__item
-        = link_to "/", class: ("global-nav__link #{is_page_current('index.html')}") do
+        = link_to "/index.html", class: ("global-nav__link #{is_page_current('index.html')}") do
           i.fa.fa-home
       li.global-nav__item
         = link_to "Schedule", "/pages/schedule.html", class: ("global-nav__link #{is_page_current('pages/schedule.html')}")

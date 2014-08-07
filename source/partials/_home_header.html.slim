@@ -4,7 +4,7 @@ header.home-header
     h2 class= "home-header__site-copy #{lang_class(data.site.event.title)}"
       = data.site.event.author
     h1.home-header__site-title
-      = link_to data.site.event.title, "/", class: ("home-header__site-title-link #{lang_class(data.site.event.title)}")
+      = link_to data.site.event.title, "/index.html", class: ("home-header__site-title-link #{lang_class(data.site.event.title)}")
     h3.home-header__event-dates= data.site.event.dates
     h4.home-header__event-place
       = data.site.event.place
