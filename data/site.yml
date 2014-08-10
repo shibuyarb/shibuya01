@@ -11,3 +11,6 @@ event:
   facebook_group_id: shibuya.rb
   twitter_id: search?f=realtime&q=%23shibuyarb
   github_url: https://github.com/shibuyarb/shibuya01
+  location:
+    googlemap_url: https://www.google.com/maps/preview?ll=-89.858394,726.107163&z=0&t=m&hl=ja&gl=JP&mapclient=embed&cid=5340717436096242888
+    googlemap_iframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.7777835073564!2d139.70091299999999!3d35.66331999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca8a26f7657%3A0x4a1e0a36384064c8!2z44K344OA44OD44Kv44K5IOOCq-ODq-ODgeODo-ODvOODm-ODvOODqw!5e0!3m2!1sja!2sjp!4v1407058368613
