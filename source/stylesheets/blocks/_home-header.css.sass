@@ -23,13 +23,17 @@
     +rem('width', 40px)
     +rem('margin-bottom', 4px)
 .home-header__site-title
-  +text-block(72px, 1.4, false, center)
-  +tauri(bold)
+  +text-block(72px, 1.3, false, center)
   +screen-xs
     +text-block(28px, 1.3)
 .home-header__site-title-link
   text-decoration: none
   color: $black
+  &.is-ja
+    +bold-ja
+    +letter-spacing-center(4px)
+  &.is-en
+    +tauri(bold)
 .home-header__site-copy
   +text-block(14px, 1.2, 12px, center)
   +tauri(bold)
@@ -40,6 +44,11 @@
   +text-block(48px, 1.5, 8px, center, $black)
   +screen-xs
     +text-block(22px, 30px, 0px)
+  &.is-ja
+    +bold-ja
+    +letter-spacing-center(2px)
+  &.is-en
+    +tauri(bold)
 .home-header__event-place
   +tauri(bold)
   +text-block(32px, 1.5, 24px, center, $black)
@@ -54,12 +63,12 @@
 .home-header__registration
   +border(all, 4px, solid, $black)
   +tauri(bold)
-  +text-block(24px, 48px, false, center, $black)
+  +text-block(24px, 48px, false, center, $white)
   +rem('width', 260px)
   text-decoration: none
-  +inline-block(bottom)
+  +inline-block(false)
   +relative
-  background-color: $pink
+  background-color: $blue
   +transition(.1s)
 
   .home-header__registration-text

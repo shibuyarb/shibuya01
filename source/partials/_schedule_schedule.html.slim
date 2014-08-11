@@ -2,12 +2,14 @@
   .schedule-schedule__items
     - articles.sort_by(&:date).each do |article|
       - if article.data.tags.include?('schedule')
-        .schedule-schedule-content class= "length-#{article.data.p_length}"
-          span.schedule-schedule-content__time
-            = article.data.p_time
-          span.schedule-schedule-content__title
-            = link_to article, class: "schedule-schedule-content__title-link #{lang_class(article.title)}" do
-              = article.title
+        .schedule-schedule-content class= "length-#{article.data.p_length} #{article.data.tags.include?('small') ? "is-small" : ""}"
+          - if not article.data.tags.include?('small')
+            span.schedule-schedule-content__time
+              = article.data.p_time
+          - if article.data.name
+            span.schedule-schedule-content__title class="#{lang_class(article.title)}"= link_to article.title, article, class: "schedule-schedule-content__title-link"
+          - else
+            span.schedule-schedule-content__title.is-small class="#{lang_class(article.title)}"= article.title
           - if article.data.name
             span.schedule-schedule-content__speaker
               - if article.data.image

@@ -5,7 +5,8 @@ header.home-header
       = data.site.event.author
     h1.home-header__site-title
       = link_to data.site.event.title, "/index.html", class: ("home-header__site-title-link #{lang_class(data.site.event.title)}")
-    h3.home-header__event-dates= data.site.event.dates
+    h3.home-header__event-dates class= ("home-header__site-title-link #{lang_class(data.site.event.dates)}")
+      = data.site.event.dates
     h4.home-header__event-place
       = data.site.event.place
       span.is-city= data.site.event.city

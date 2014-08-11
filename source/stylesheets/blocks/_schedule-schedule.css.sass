@@ -17,6 +17,11 @@ $five-minutes: 30px
     background-color: rgba(tint($yellow, 40%), .3)
   &:first-child
     +border(top, 4px, solid, $black)
+  &.is-small
+    +rem('padding', 0px 10px)
+    background-color: rgba(#eee, .3)
+    .schedule-schedule-content__time
+      +inline-block(false)
   @for $i from 1 through 18
     &.length-#{$i * 5}
       +rem('height', $five-minutes * $i)
@@ -33,11 +38,13 @@ $five-minutes: 30px
   display: block
   +horizontal-mg(auto)
   +rem('margin-bottom', 4px)
-.schedule-schedule-content__title-link
+.schedule-schedule-content__title
   +text-block(22px, 1.5, false, $black, bold)
-  text-decoration: none
   &.is-en
     +tauri(bold)
+
+.schedule-schedule-content__title-link
+  text-decoration: none
 .schedule-schedule-content__name-link
   +text-block(12px, 1.6, false, center, $black)
   +block-link
