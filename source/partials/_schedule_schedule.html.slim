@@ -6,7 +6,6 @@
           - if not article.data.tags.include?('small')
             span.schedule-schedule-content__time
               = article.data.p_time
-          - if article.data.name
             span.schedule-schedule-content__title class="#{lang_class(article.title)}"= link_to article.title, article, class: "schedule-schedule-content__title-link"
           - else
             span.schedule-schedule-content__title.is-small class="#{lang_class(article.title)}"= article.title

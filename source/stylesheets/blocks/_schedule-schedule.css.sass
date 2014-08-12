@@ -19,7 +19,7 @@ $five-minutes: 30px
     +border(top, 4px, solid, $black)
   &.is-small
     +rem('padding', 0px 10px)
-    background-color: rgba(#eee, .3)
+    background-color: $gray-l
     .schedule-schedule-content__time
       +inline-block(false)
   @for $i from 1 through 18
@@ -27,8 +27,18 @@ $five-minutes: 30px
       +rem('height', $five-minutes * $i)
 .schedule-schedule-content__time
   +tauri(bold)
-  display: block
-  +text-block(18px, 1.5, 8px)
+  +inline-block(false)
+  +text-block(16px, 32px, false, $white)
+  +rem('padding-left', 8px)
+  background-color: $black
+  +rem('margin-right', 24px)
+  +relative
+  &:before
+    content: ""
+    display: block
+    +border(all, 16px, solid, transparent)
+    border-left-color: $black
+    +absolute(right, -32px, top, 0)
 .schedule-schedule-content__speaker
   +absolute(right, 10px, top, 10px)
   +rem('width', 152px)
@@ -39,12 +49,17 @@ $five-minutes: 30px
   +horizontal-mg(auto)
   +rem('margin-bottom', 4px)
 .schedule-schedule-content__title
-  +text-block(22px, 1.5, false, $black, bold)
+  +text-block(26px, 32px, false, $black, bold)
   &.is-en
     +tauri(bold)
+  &.is-small
+    +absolute(left, 10px, top, 50%)
+    +rem('margin-top', -10px)
+    +text-block(18px, 22px)
 
 .schedule-schedule-content__title-link
   text-decoration: none
+  +hover-link-color
 .schedule-schedule-content__name-link
   +text-block(12px, 1.6, false, center, $black)
   +block-link
