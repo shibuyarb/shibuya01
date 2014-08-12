@@ -1,7 +1,19 @@
 .access-adress__address
   +text-block(16px, 1.8)
+.access-adress__google-map-link
+  +inline-block(false)
+  +border(all, 4px, solid, $black)
+  +tauri(bold)
+  +text-block(18px, 32px, false, center, $black)
+  +block-link
+  background-color: $pink
+  +rem('margin-top', 16px)
 .access-adress__map
+  +border(all, 4px, solid, $black)
+  +box-sizing(border-box)
+  +relative
+  +baloon-tale(left, $black, 18px, 16px, 4px, top, 36px)
   iframe
-    width: 100%
+    width: 100% !important
   +screen-xs
     display: none

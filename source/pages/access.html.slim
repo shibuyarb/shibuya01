@@ -12,8 +12,7 @@ title: Access
           | シダックスカルチャービレッジ8F
           br
           | 最寄り駅: 渋谷
-        .access-adress__google-map-link
-          = link_to "GoogleMap", data.site.event.location.googlemap_url
+        = link_to "GoogleMap", data.site.event.location.googlemap_url, class: "access-adress__google-map-link"
   .col-sm-9.col-xs-12
     .access-adress__map
       <iframe src=#{data.site.event.location.googlemap_iframe} width="800" height="600" frameborder="0" style="border:0"></iframe>

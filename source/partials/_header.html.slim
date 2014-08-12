@@ -3,8 +3,8 @@ header.header
     i.fa.fa-bars.header__open-global-nav-icon.js-open-slide-nav.visible-xs-block
     .row
       .col-sm-8.col-xs-12
-        h1.header__site-title
-          = link_to "/index.html", class: ("header__site-title-link #{lang_class(data.site.event.title)}") do
+        h1.header__site-title class= "#{lang_class(data.site.event.title)}"
+          = link_to "/index.html", class: ("header__site-title-link") do
             = image_tag('ruby.svg', class: "header__ruby")
             = data.site.event.title
       .col-sm-4.visible-lg-block
