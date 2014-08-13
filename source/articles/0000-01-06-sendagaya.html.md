@@ -1,10 +1,11 @@
 ---
-title: Closing
-name: Teppei Machida
-tags: schedule
-image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
-p_date: 11/1
-p_time: '17:00'
+title: Community Talk
+name: sendagaya.rb
+tags: schedule, pickup, speaker
+pick_up_label: Speaker
+image: https://avatars3.githubusercontent.com/u/1685766?v=2&s=200
+p_date: 1l/1
+p_time: '14:05'
 p_length: 30
 ---
 
