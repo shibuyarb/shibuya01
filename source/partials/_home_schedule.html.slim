@@ -8,6 +8,7 @@
             = article.data.p_time
           span.home-schedule-content__title= article.title
           - if article.data.name
-            = link_to article.data.name, article, class: "home-schedule-content__name-link"
-          - if article.data.image
-            = image_tag(article.data.image, class: "home-schedule-content__image")
+            = link_to article, class: "home-schedule-content__speaker-link" do
+              span.home-schedule-content__speaker-name= article.data.name
+              - if article.data.image
+                = image_tag(article.data.image, class: "home-schedule-content__speaker-image")

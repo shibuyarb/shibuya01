@@ -11,6 +11,9 @@
   color: $black
   +relative
   +text-block(16px, 1.5, false, bold)
+  +screen-xs
+    +rem('padding-left', 56px)
+    +rem('padding-right', 40px)
   &:last-child
     +border(bottom, 4px, solid, $black)
   &.is-small
@@ -20,16 +23,29 @@
     background-color: #eeeeee
 .home-schedule-content__time
   +rem('margin-right', 24px)
-.home-schedule-content__image
-  +rem('width', 24px)
-  +rem('margin-left', 8px)
-  +absolute(right, 8px, top, 4px)
-  float: right
-  +border-radius(50%)
-.home-schedule-content__name
-  +text-block(14px, 1.5, 8px)
-.home-schedule-content__name-link
+  +screen-xs
+    +text-block(12px, 1.5)
+    +absolute(left, 8px, top, 10px)
+    +rem('width', 40px)
+.home-schedule-content__speaker-link
   color: $black
   +hover-link
   +absolute(right, 40px, bottom, 4px)
   +text-block(12px, 1.5)
+  +rem('padding-right', 30px)
+  +screen-xs
+    bottom: auto
+    +absolute(right, 8px, top, 6px)
+    padding-right: 0
+.home-schedule-content__speaker-image
+  +rem('width', 24px)
+  +rem('margin-left', 8px)
+  +absolute(right, 0, top, -6px)
+  +border-radius(50%)
+  +screen-xs
+    +relative
+    top: 0
+.home-schedule-content__speaker-name
+  +text-block(14px, 1.5, 8px)
+  +screen-xs
+    display: none
