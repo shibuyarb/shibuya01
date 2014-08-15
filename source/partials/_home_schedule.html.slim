@@ -1,5 +1,5 @@
 .home-schedule
-  h2.home-schedule__title タイムテーブル / Time Table
+  h2.home-schedule__title スケジュール / Schedule
   .home-schedule__items
     - articles.sort_by(&:date).each do |article|
       - if article.data.tags.include?('schedule')
