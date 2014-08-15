@@ -10,10 +10,13 @@
   +border(bottom, 1px, solid, $black)
   +rem('margin-bottom', 16px)
   +rem('padding-bottom', 16px)
+  +screen-xs
+    +rem('margin-bottom', 8px)
+    +rem('padding-bottom', 16px)
   p
     +text-block(16px, 1.8, 1.4)
     +screen-xs
-      +text-block(14px, 1.8, 1.4)
+      +text-block(14px, 1.8, 1.2)
   >*:last-child
     margin-bottom: 0
 .home-about__author-name
@@ -24,5 +27,7 @@
   +rem('margin-right', 8px)
 .home-about__footer
   text-align: right
+  +screen-xs
+    +rem('padding-bottom', 4px)
 .home-about__author-name
   +top(-4px)
