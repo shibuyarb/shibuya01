@@ -4,15 +4,16 @@ title: Speakers
 
 .speakers
   .speakers__items
-    .row
-      - blog.articles.sort_by(&:date).each do |article|
-        - if article.data.tags.include?('speaker')
-          .col-sm-4
-            .speakers__item.speakers-speaker
-              span.speakers-speaker__time
-                = article.data.p_time
-              span.speakers-speaker__title= article.title
-              - if article.data.name
-                = link_to article.data.name, article, class: "speakers-speaker__name-link"
-              - if article.data.image
-                = image_tag(article.data.image, class: "speakers-speaker__image")
+    .wrapper
+      .row
+        - blog.articles.sort_by(&:date).each do |article|
+          - if article.data.tags.include?('speaker')
+            .col-sm-4
+              .speakers__item.speakers-speaker
+                span.speakers-speaker__time
+                  = article.data.p_time
+                span.speakers-speaker__title= article.title
+                - if article.data.name
+                  = link_to article.data.name, article, class: "speakers-speaker__name-link"
+                - if article.data.image
+                  = image_tag(article.data.image, class: "speakers-speaker__image")

@@ -4,12 +4,16 @@
     +rem('margin-bottom', 24px)
 .home-schedule__title
   +tauri(bold)
-  +text-block(20px, 1.5, 8px)
+  +text-block(20px, 48px)
+  +border(all, 4px, solid, $black)
+  +rem('border-bottom-width', 2px)
+  border-bottom-style: dotted
+  +horizontal-pd(16px)
 .home-schedule__items
-  +border(left top right, 4px, solid, $black)
+  +border(left right, 4px, solid, $black)
 .home-schedule-content
   +border(bottom, 2px, solid, $black)
-  +rem('padding', 6px 8px)
+  +rem('padding', 6px 16px)
   color: $black
   +relative
   +text-block(16px, 1.5, false, bold)
@@ -22,9 +26,11 @@
     .home-schedule-content__header
       border-bottom: 0
   &:nth-child(even)
-    background-color: #eeeeee
+    background-color: $gray-ll
 .home-schedule-content__time
-  +rem('margin-right', 24px)
+  +rem('width', 72px)
+  +inline-block(false)
+  +relative
   +screen-xs
     +text-block(12px, 1.5)
     +absolute(left, 8px, top, 10px)
@@ -32,7 +38,7 @@
 .home-schedule-content__speaker-link
   color: $black
   +hover-link
-  +absolute(right, 40px, bottom, 4px)
+  +absolute(right, 16px, bottom, 4px)
   +text-block(12px, 1.5)
   +rem('padding-right', 30px)
   +screen-xs

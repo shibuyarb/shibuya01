@@ -3,8 +3,9 @@
   +rem('margin-bottom', 16px)
   +rem('height', 260px)
   +relative
-  +rem('padding', 16px)
+  +rem('padding', 40px 16px 16px)
   +box-sizing(border-box)
+  +relative
   +screen-xs
     +rem('height', 180px)
 .speakers-speaker__title
@@ -16,3 +17,8 @@
   +border-radius(50%)
 .speakers-speaker__time
   +tauri(bold)
+  background-color: $black
+  +absolute(left, 0, top, 0)
+  display: block
+  +text-block(14px, 32px, false, $white)
+  +horizontal-pd(8px)
