@@ -1,15 +1,16 @@
 .home-about
   +rem('margin-bottom', 48px)
   +border(all, 4px, solid, $black)
-  +rem('padding', 8px 16px)
 .home-about__title
-  +tauri(bold)
-  +text-block(20px, 1.5, 16px)
-  +border(bottom, 1px, solid, $black)
+  +bold-ja
+  +text-block(20px, 48px)
+  +rem('border-bottom-width', 2px)
+  border-bottom-style: dotted
+  +horizontal-pd(16px)
+  background-color: $gray-l
 .home-about__body
-  +border(bottom, 1px, solid, $black)
   +rem('margin-bottom', 16px)
-  +rem('padding-bottom', 16px)
+  +rem('padding', 8px 16px 0)
   +screen-xs
     +rem('margin-bottom', 8px)
     +rem('padding-bottom', 16px)
@@ -27,6 +28,8 @@
   +rem('margin-right', 8px)
 .home-about__footer
   text-align: right
+  +horizontal-pd(16px)
+  +rem('padding-bottom', 16px)
   +screen-xs
     +rem('padding-bottom', 4px)
 .home-about__author-name
