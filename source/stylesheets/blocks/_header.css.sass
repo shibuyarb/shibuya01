@@ -8,21 +8,21 @@ body
     overflow: hidden
 .header
   +box-sizing(border-box)
-  +rem('padding-bottom', 24px)
+  +rem('padding-bottom', 8px)
   background-color: #FFFF98
   +screen-xs
     height: auto
     +rem('padding-bottom', 16px)
     +rem('margin-bottom', 16px)
 .header__wrapper
-  +rem('padding-top', 32px)
+  +rem('padding-top', 16px)
   +relative
   +screen-xs
     +rem('padding-top', 16px)
 .header__site-title
   +text-block(40px, 1.4, false)
-  +relative
   +rem('padding-left', 68px)
+  +top(8px)
   +screen-xs
     padding-left: 0
     +text-block(24px, 1.3, false, center)
@@ -56,10 +56,10 @@ body
   +rem('width', 50px)
   +rem('height', 50px)
 .header__infomations
-  +rem('margin-bottom', 8px)
+  +top(-4px)
 .header__infomations-item
   +inline-block(bottom)
   +tauri(bold)
-  +text-block(20px, 1.5, false)
+  +text-block(26px, 1.6, false)
   &.is-event-dates
     +rem('margin-right', 8px)
