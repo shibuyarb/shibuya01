@@ -8,8 +8,9 @@ header.home-header
     h3.home-header__event-dates class= ("home-header__site-title-link #{lang_class(data.site.event.dates)}")
       = data.site.event.dates
     h4.home-header__event-place
-      = data.site.event.place
-      span.is-city= data.site.event.city
+      = link_to "/pages/access", class: "home-header__event-place-link" do
+        = data.site.event.place
+        span.is-city= data.site.event.city
     .home-header__registration-wrapper.is-center-wrapper
       = link_to data.site.event.ticket_url, class: "home-header__registration" do
         span.home-header__registration-text Coming soon..
