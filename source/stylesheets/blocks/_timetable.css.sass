@@ -11,8 +11,14 @@
   +tauri(bold)
   +text-block(16px, 1.6)
   +screen-xs
-    +text-block(14px, 1.6, false, $white)
+    +text-block(14px, 22px, false, $white)
     +relative(auto, top, -20px)
     +inline-block(false)
     background-color: $black
     +rem('padding-left', 8px)
+    &:before
+      content: ""
+      display: block
+      +border(all, 11px, solid, transparent)
+      border-left-color: $black
+      +absolute(right, -22px, top, 0)
