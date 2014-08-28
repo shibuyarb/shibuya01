@@ -4,8 +4,11 @@ article.article
       .col-sm-2.col-xs-12
         .article__sub
           - if article.data.image
-            = image_tag(article.data.image, class: "speaker__image")
-          p.article__created-at 11月1日 #{article.data.p_time}
+            = image_tag(article.data.image, class: "article__speaker-image")
+          .article__speaker-data
+            h3.article__speaker-name class= "#{lang_class(article.data.name)}"
+              = article.data.name
+            p.article__created-at 11月1日 #{article.data.p_time}
 
       .col-sm-10.col-xs-12
         .article__content

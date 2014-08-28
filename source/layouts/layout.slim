@@ -16,7 +16,7 @@ html
         article.page
           .wrapper.page__wrapper
             header.page__header
-              h1.page__title
+              h1.page__title class="#{lang_class(current_page.data.title)}"
                 = current_page.data.title
             div class=(nav_page? ? 'nav-page__body':'page__body')
               = yield

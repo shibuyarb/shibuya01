@@ -1,4 +1,17 @@
-.speaker__image
+.article__sub
+  +screen-xs
+    +relative
+    +rem('min-height', 80px)
+.article__speaker-image
   display: block
   +border-radius(4px)
   width: 100%
+  +screen-xs
+    +rem('width', 80px)
+    +absolute(left, 0, top, 0)
+.article__speaker-data
+  +screen-xs
+    +rem('padding-left', 96px)
+.article__speaker-name
+  +text-block(18px, 1.4)
+  +main-font
