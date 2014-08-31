@@ -3,49 +3,67 @@ $five-minutes: 30px
   +absolute(left, 0, top, 0, 2)
   width: 100%
   +box-sizing(border-box)
-  +rem('padding-left', 100px)
+  +rem('padding-left', 80px)
   +screen-xs
     +rem('padding-left', 60px)
+.schedule-schedule-content__header
+  +relative
+  +rem('padding-left', 88px)
+  +screen-xs
+    padding-left: 0
+.schedule-schedule-content__time
+  +tauri(bold)
+  +inline-block(false)
+  +text-block(16px, 28px)
+  +rem('padding-left', 8px)
+  +rem('padding-right', 8px)
+  background-color: $white
+  +border(all, 4px, solid, $black)
+  +absolute(left, 0, top, 0)
+  +screen-xs
+    +border(all, 2px, solid, $black)
+    +text-block(12px, 20px, 4px)
+    position: static
+.schedule-schedule-content__title
+  +text-block(26px, 32px, false, $black, bold)
+  +main-font
+  +screen-xs
+    +text-block(16px, 1.5)
+    display: block
+  &.is-small
+    +absolute(left, 16px, top, 50%)
+    +rem('margin-top', -10px)
+    +text-block(16px, 22px)
+    +screen-xs
+      +text-block(14px, 22px)
+
+.schedule-schedule-content__title-link
+  text-decoration: none
+  +hover-link-color
+
 .schedule-schedule-content
   +border(all, 4px, solid, $black)
   border-top: none
   +box-sizing(border-box)
   background-color: rgba($yellow, .3)
-  +rem('padding', 10px)
+  +rem('padding', 16px)
   +relative
+  +screen-xs
+    +rem('padding', 8px)
   &:nth-child(even)
     background-color: rgba(tint($yellow, 40%), .3)
   &:first-child
     +border(top, 4px, solid, $black)
   &.is-small
-    +rem('padding', 0px 10px)
+    +rem('padding', 0px 16px)
     background-color: $gray-l
+    .schedule-schedule-content__header
+      position: static
     .schedule-schedule-content__time
       +inline-block(false)
   @for $i from 1 through 18
     &.length-#{$i * 5}
       +rem('height', $five-minutes * $i)
-.schedule-schedule-content__time
-  +top(-3px)
-  +tauri(bold)
-  +inline-block(false)
-  +text-block(16px, 32px, false, $white)
-  +rem('padding-left', 8px)
-  background-color: $black
-  +rem('margin-right', 24px)
-  +relative
-  &:before
-    content: ""
-    display: block
-    +border(all, 16px, solid, transparent)
-    border-left-color: $black
-    +absolute(right, -32px, top, 0)
-  +screen-xs
-    +text-block(12px, 24px)
-    &:before
-      +border(all, 12px, solid, transparent)
-      border-left-color: $black
-      +absolute(right, -24px, top, 0)
 .schedule-schedule-content__speaker
   +absolute(right, 10px, top, 10px)
   +rem('width', 152px)
@@ -60,23 +78,6 @@ $five-minutes: 30px
   +rem('margin-bottom', 4px)
   +screen-xs
     +size(20px)
-.schedule-schedule-content__title
-  +text-block(26px, 32px, false, $black, bold)
-  +screen-xs
-    +text-block(16px, 1.5)
-    display: block
-  &.is-en
-    +tauri(bold)
-  &.is-small
-    +absolute(left, 10px, top, 50%)
-    +rem('margin-top', -10px)
-    +text-block(16px, 22px)
-    +screen-xs
-      +text-block(14px, 22px)
-
-.schedule-schedule-content__title-link
-  text-decoration: none
-  +hover-link-color
 .schedule-schedule-content__name-link
   +text-block(12px, 1.6, false, center, $black)
   +block-link

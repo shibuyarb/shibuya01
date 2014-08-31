@@ -8,8 +8,19 @@
   &:first-child
     +border(top, 1px, dotted, $black)
 .timetable__time-label
+  +text-block(16px, 28px, false, $white)
+  +relative(auto, top, -25px)
+  +inline-block(false)
+  background-color: $black
+  +rem('padding-left', 8px)
+  +rem('padding-right', 4px)
   +tauri(bold)
-  +text-block(16px, 1.6)
+  &:before
+    content: ""
+    display: block
+    +border(all, 14px, solid, transparent)
+    border-left-color: $black
+    +absolute(right, -28px, top, 0)
   +screen-xs
     +text-block(14px, 22px, false, $white)
     +relative(auto, top, -20px)
