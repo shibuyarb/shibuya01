@@ -128,7 +128,7 @@ helpers do
     current_page.url.include?('archives.html') or current_page.url.include?('tags.html')
   end
   def lang_class(text)
-    case (text).ascii_only?
+    case (text.to_s).ascii_only?
     when true
       return 'is-en'
     end
