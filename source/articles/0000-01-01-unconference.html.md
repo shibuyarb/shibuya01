@@ -1,12 +1,10 @@
 ---
-title: ginza.rb
-name: Teppei Machida
-tags: schedule, pickup, speaker
-pick_up_label: Speaker
-image: https://pbs.twimg.com/profile_images/525575524/14424182_2338889845_400x400.jpg
+title: Unconference
+tags: schedule
 p_date: 11/1
-p_time: '14:35'
-p_length: 30
+p_time: '10:30'
+p_length: 60
+id: 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
