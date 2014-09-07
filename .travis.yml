@@ -2,7 +2,11 @@ language: ruby
 rvm: 2.1
 env:
   global:
-    secure: ADJUZ7IMdZimpSnohjV8+G8/l/zsXgAcMEukPaKJaNkFrezL7dnijH+YrsvJrnbBAvqHs9L582tPnlA63Lx7OUhV4usrytQBh0yF6b7CwCSe1HfNxBuhpxFWIAf1fzjzREzgr3FQ9ON6AZs/+iv/UhypBVcrPW8DktrQqtIqgo0=
+    - GIT_COMMITTER_NAME=travis
+    - GIT_COMMITTER_EMAIL=travis@example.com
+    - GIT_AUTHOR_NAME=travis
+    - GIT_AUTHOR_EMAIL=travis@example.com
+    - secure: ADJUZ7IMdZimpSnohjV8+G8/l/zsXgAcMEukPaKJaNkFrezL7dnijH+YrsvJrnbBAvqHs9L582tPnlA63Lx7OUhV4usrytQBh0yF6b7CwCSe1HfNxBuhpxFWIAf1fzjzREzgr3FQ9ON6AZs/+iv/UhypBVcrPW8DktrQqtIqgo0=
 branches:
   only: master
   except: gh-pages
