@@ -180,6 +180,7 @@ DEPENDENCIES
   middleman-oulu (~> 0.3.23)!
   middleman-syntax
   modular-scale
+  rake
   redcarpet
   sass (~> 3.3.8)
   sassy-maps
