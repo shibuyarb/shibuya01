@@ -4,8 +4,8 @@ env:
   global:
     secure: ADJUZ7IMdZimpSnohjV8+G8/l/zsXgAcMEukPaKJaNkFrezL7dnijH+YrsvJrnbBAvqHs9L582tPnlA63Lx7OUhV4usrytQBh0yF6b7CwCSe1HfNxBuhpxFWIAf1fzjzREzgr3FQ9ON6AZs/+iv/UhypBVcrPW8DktrQqtIqgo0=
 branches:
-  only: source
-  except: master
+  only: master
+  except: gh-pages
 before_script: '[ "$TRAVIS_BRANCH" == "source" ] && [ "$GH_TOKEN" ] && rake setup'
 script: rake build
 after_success: '[ "$TRAVIS_BRANCH" == "source" ] && [ "$GH_TOKEN" ] && rake deploy'
