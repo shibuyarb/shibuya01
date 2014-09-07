@@ -6,6 +6,6 @@ env:
 branches:
   only: master
   except: gh-pages
-before_script: '[ "$TRAVIS_BRANCH" == "source" ] && [ "$GH_TOKEN" ] && rake setup'
+before_script: '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake setup'
 script: rake build
-after_success: '[ "$TRAVIS_BRANCH" == "source" ] && [ "$GH_TOKEN" ] && rake deploy'
+after_success: '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake deploy'
