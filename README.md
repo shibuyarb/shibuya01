@@ -1,6 +1,6 @@
 # ShibuyaRubyKaigi01
 
-http://regional.rubykaigi.org/shibuya01/ （予定地）
+http://regional.rubykaigi.org/shibuya01/
 
 ## スタッフ向け
 
