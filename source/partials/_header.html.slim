@@ -11,4 +11,7 @@ header.header
         .header__infomations
           ul.header__infomations-items
             li.header__infomations-item.is-event-dates= data.site.event.dates
-            li.header__infomations-item.is-event-place= data.site.event.place
+            li.header__infomations-item.is-event-place
+              = link_to "/access", class: "header__infomations-item-link"
+                = data.site.event.place
+                i.fa.fa-map-marker.header__infomations-item-icon

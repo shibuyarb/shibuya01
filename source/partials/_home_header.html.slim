@@ -11,6 +11,7 @@ header.home-header
       = link_to "/pages/access.html", class: "home-header__event-place-link" do
         = data.site.event.place
         span.is-city= data.site.event.city
+        i.fa.fa-map-marker.is-icon
     .home-header__registration-wrapper.is-center-wrapper
       = link_to data.site.event.ticket_url, class: "home-header__registration" do
         span.home-header__registration-text Registration

@@ -18,7 +18,8 @@ body
   +rem('padding-top', 16px)
   +relative
   +screen-xs
-    +rem('padding-top', 16px)
+    +rem('padding-top', 4px)
+    +rem('padding-bottom', 4px)
 .header__site-title
   +text-block(36px, 1.4, false)
   +rem('padding-left', 68px)
@@ -34,11 +35,11 @@ body
   +rem('width', 52px)
   +absolute(left, 0, top, 6px)
   +screen-xs
-    +rem('width', 38px)
+    +rem('width', 32px)
     position: static
     display: block
     +horizontal-mg(auto)
-    +rem('margin-bottom', 8px)
+    +rem('margin-bottom', 4px)
 .header .header__open-global-nav-icon
   +screen-xs
     display: block
@@ -57,6 +58,12 @@ body
 .header__infomations-item
   +inline-block(bottom)
   +tauri(bold)
-  +text-block(24px, 34px, false)
+  +text-block(20px, 34px, false)
   &.is-event-dates
     +rem('margin-right', 8px)
+.header__infomations-item-link
+  color: $black
+  +hover-link
+.header__infomations-item-icon
+  +rem('margin-left', 8px)
+  color: $pink

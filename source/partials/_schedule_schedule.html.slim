@@ -13,5 +13,6 @@
           - if article.data.name
             span.schedule-schedule-content__speaker
               - if article.data.image
-                = image_tag(article.data.image, class: "schedule-schedule-content__image")
+                = link_to article
+                  = image_tag(article.data.image, class: "schedule-schedule-content__image")
               = link_to article.data.name, article, class: "schedule-schedule-content__name-link"

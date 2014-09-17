@@ -4,9 +4,9 @@
   +rem('height', 180px)
   +rem('padding-top', 10px)
   +box-sizing(border-box)
-  +border(bottom, 1px, dotted, $black)
+  +border(bottom, 1px, dotted, tint($black, 20%))
   &:first-child
-    +border(top, 1px, dotted, $black)
+    +border(top, 1px, dotted, tint($black, 20%))
 .timetable__time-label
   +text-block(16px, 28px, false, $white)
   +relative(auto, top, -25px)

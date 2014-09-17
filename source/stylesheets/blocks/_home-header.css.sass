@@ -7,7 +7,7 @@
   +relative
   +box-sizing(border-box)
   +rem('padding-top', 32px)
-  +rem('padding-bottom', 72px)
+  +rem('padding-bottom', 48px)
   +screen-xs
     +rem('padding-top', 16px)
     +rem('padding-bottom', 24px)
@@ -18,7 +18,7 @@
   display: block
   +rem('width', 64px)
   +horizontal-mg(auto)
-  +rem('margin-bottom', 8px)
+  +rem('margin-bottom', 4px)
   +screen-xs
     +rem('width', 40px)
     +rem('margin-bottom', 4px)
@@ -37,7 +37,7 @@
   &.is-en
     +tauri(bold)
 .home-header__site-copy
-  +text-block(14px, 1.2, 12px, center)
+  +text-block(14px, 1.2, 4px, center)
   +tauri(bold)
   +screen-xs
     +text-block(10px, 1.2, 8px, center)
@@ -67,6 +67,9 @@
     +screen-xs
       +text-block(14px)
       +rem('margin-left', 8px)
+  .is-icon
+    +rem('margin-left', 8px)
+    color: $pink
 .home-header__registration
   +border(all, 4px, solid, $black)
   +tauri(bold)

@@ -5,7 +5,9 @@
 .article__speaker-image
   display: block
   +border-radius(4px)
-  width: 100%
+  +rem('max-width', 120px)
+  +horizontal-mg-auto
+  +rem('margin-bottom', 8px)
   +screen-xs
     +rem('width', 80px)
     +absolute(left, 0, top, 0)
@@ -13,5 +15,5 @@
   +screen-xs
     +rem('padding-left', 96px)
 .article__speaker-name
-  +text-block(18px, 1.4)
+  +text-block(20px, 1.4, false, center)
   +main-font
