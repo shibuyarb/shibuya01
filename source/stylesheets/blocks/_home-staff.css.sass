@@ -1,8 +1,8 @@
-.home-schedule
-  +rem('margin-bottom', 18px)
+.home-staff
+  +rem('margin-bottom', 48px)
   +screen-xs
     +rem('margin-bottom', 24px)
-.home-schedule__title
+.home-staff__title
   +bold-ja
   +text-block(20px, 48px)
   +border(all, 4px, solid, $black)
@@ -10,10 +10,9 @@
   border-bottom-style: dotted
   +horizontal-pd(16px)
   background-color: $gray-l
-.home-schedule__items
+.home-staff__members
   +border(left right, 4px, solid, $black)
-.home-schedule-content
-  +border(bottom, 2px, solid, $black)
+.home-staff-member
   +rem('padding', 6px 16px)
   color: $black
   +relative
@@ -28,35 +27,19 @@
       border-bottom: 0
   &:nth-child(even)
     background-color: $gray-ll
-.home-schedule-content__time
-  +rem('width', 72px)
+.home-staff-member__role
+  +rem('width', 208px)
   +inline-block(false)
   +relative
   +screen-xs
     +text-block(12px, 1.5)
     +absolute(left, 8px, top, 10px)
     +rem('width', 40px)
-.home-schedule-content__speaker-link
-  color: $black
-  +hover-link
-  +absolute(right, 16px, bottom, 4px)
-  +text-block(12px, 1.5)
-  +rem('padding-right', 30px)
-  &:hover
-    color: $blue
-  +screen-xs
-    bottom: auto
-    +absolute(right, 8px, top, 6px)
-    padding-right: 0
-.home-schedule-content__speaker-image
+.home-staff-member__image
   +rem('width', 24px)
-  +rem('margin-left', 8px)
-  +absolute(right, 0, top, -6px)
+  +rem('margin-right', 8px)
   +border-radius(50%)
   +screen-xs
     +relative
     top: 0
-.home-schedule-content__speaker-name
-  +text-block(14px, 1.5, 8px)
-  +screen-xs
-    display: none
+
