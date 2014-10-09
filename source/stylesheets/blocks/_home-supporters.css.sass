@@ -1,14 +1,14 @@
-.home-about
-  +rem('margin-bottom', 18px)
+.home-supporters
+  +rem('margin-bottom', 48px)
   +border(all, 4px, solid, $black)
-.home-about__title
+.home-supporters__title
   +bold-ja
   +text-block(20px, 48px)
   +rem('border-bottom-width', 2px)
   border-bottom-style: dotted
   +horizontal-pd(16px)
   background-color: $gray-l
-.home-about__body
+.home-supporters__body
   +rem('margin-bottom', 16px)
   +rem('padding', 8px 16px 0)
   +screen-xs
@@ -20,17 +20,7 @@
       +text-block(14px, 1.8, 1.2)
   >*:last-child
     margin-bottom: 0
-.home-about__author-name
-  +inline-block(bottom)
-  +rem('font-size', 14px)
-.home-about__author-icon
-  +rem('width', 32px)
-  +rem('margin-right', 8px)
-.home-about__footer
-  text-align: right
-  +horizontal-pd(16px)
-  +rem('padding-bottom', 16px)
-  +screen-xs
-    +rem('padding-bottom', 16px)
-.home-about__author-name
-  +top(-4px)
+  .supporter
+    text-align: center
+    +rem('margin-bottom', 10px)
+
