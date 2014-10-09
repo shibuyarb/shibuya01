@@ -36,27 +36,20 @@
     +text-block(12px, 1.5)
     +absolute(left, 8px, top, 10px)
     +rem('width', 40px)
-.home-schedule-content__speaker-link
+.home-schedule-content__link
   color: $black
-  +hover-link
-  +absolute(right, 16px, bottom, 4px)
-  +text-block(12px, 1.5)
-  +rem('padding-right', 30px)
   &:hover
     color: $blue
-  +screen-xs
-    bottom: auto
-    +absolute(right, 8px, top, 6px)
-    padding-right: 0
 .home-schedule-content__speaker-image
   +rem('width', 24px)
   +rem('margin-left', 8px)
-  +absolute(right, 0, top, -6px)
+  +absolute(right, 10px)
   +border-radius(50%)
   +screen-xs
-    +relative
-    top: 0
+    +absolute(right, 10px)
 .home-schedule-content__speaker-name
+  +absolute(right, 16px)
   +text-block(14px, 1.5, 8px)
+  +rem('padding-right', 30px)
   +screen-xs
     display: none

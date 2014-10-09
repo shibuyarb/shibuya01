@@ -6,9 +6,12 @@
         .home-schedule-content
           span.home-schedule-content__time
             = article.data.p_time
-          span.home-schedule-content__title= article.title
+          span.home-schedule-content__title
+            - if article.data.tags.include?('small')
+              = article.title
+            - else
+              = link_to article.title, article, class: "home-schedule-content__link"
           - if article.data.name
-            = link_to article, class: "home-schedule-content__speaker-link" do
-              span.home-schedule-content__speaker-name= article.data.name
-              - if article.data.image
-                = image_tag(article.data.image, class: "home-schedule-content__speaker-image")
+            span.home-schedule-content__speaker-name = article.data.name
+            - if article.data.image
+              = image_tag(article.data.image, class: "home-schedule-content__speaker-image")
