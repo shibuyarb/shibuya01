@@ -1,0 +1,39 @@
+.home-staff
+  +rem('margin-bottom', 48px)
+  +screen-xs
+    +rem('margin-bottom', 24px)
+.home-staff__title
+  +bold-ja
+  +text-block(20px, 48px)
+  +border(all, 4px, solid, $black)
+  +rem('border-bottom-width', 2px)
+  border-bottom-style: dotted
+  +horizontal-pd(16px)
+  background-color: $gray-l
+.home-staff__members
+  +border(left right, 4px, solid, $black)
+.home-staff-member
+  +rem('padding', 6px 16px)
+  color: $black
+  +relative
+  +text-block(16px, 1.5, false, bold)
+  &:last-child
+    +border(bottom, 4px, solid, $black)
+  &.is-small
+    .home-schedule-content__header
+      border-bottom: 0
+  &:nth-child(even)
+    background-color: $gray-ll
+.home-staff-member__role
+  +rem('width', 208px)
+  +inline-block(false)
+  +relative
+  +screen-xs
+    display: block
+.home-staff-member__image
+  +rem('width', 24px)
+  +rem('margin-right', 8px)
+  +border-radius(50%)
+  +screen-xs
+    top: 0
+
