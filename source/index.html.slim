@@ -6,9 +6,6 @@ per_page: 10
 .wrapper
   .row
     .col-sm-6.col-xs-12
-      = partial 'partials/home_schedule', locals: {articles: articles}
-      = partial 'partials/home_staff'
-    .col-sm-6.col-xs-12
       - articles.each do |article|
         - if article.data.tags.include?('about')
           .home-about
@@ -20,4 +17,7 @@ per_page: 10
             footer.home-about__footer
               = image_tag(article.data.author_icon, class: "home-about__author-icon")
               p.home-about__author-name= article.data.author_name
+      = partial 'partials/home_staff'
+    .col-sm-6.col-xs-12
+      = partial 'partials/home_schedule', locals: {articles: articles}
       = partial 'partials/supporters'
