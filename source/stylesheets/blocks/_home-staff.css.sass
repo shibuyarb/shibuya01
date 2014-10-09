@@ -17,9 +17,6 @@
   color: $black
   +relative
   +text-block(16px, 1.5, false, bold)
-  +screen-xs
-    +rem('padding-left', 56px)
-    +rem('padding-right', 40px)
   &:last-child
     +border(bottom, 4px, solid, $black)
   &.is-small
@@ -32,14 +29,11 @@
   +inline-block(false)
   +relative
   +screen-xs
-    +text-block(12px, 1.5)
-    +absolute(left, 8px, top, 10px)
-    +rem('width', 40px)
+    display: block
 .home-staff-member__image
   +rem('width', 24px)
   +rem('margin-right', 8px)
   +border-radius(50%)
   +screen-xs
-    +relative
     top: 0
 
