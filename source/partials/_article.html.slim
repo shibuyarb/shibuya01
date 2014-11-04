@@ -16,3 +16,7 @@ article.article
             h1.article__title= link_to article.title, article, class: "article__title-link"
           .article__body
             = article.body
+
+            - if article.data.materials.try(:first)
+              h2 Presentation Material(s)
+              = partial 'partials/presentation_description', locals: {article: article}
