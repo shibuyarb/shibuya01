@@ -4,6 +4,15 @@ tags: schedule
 p_date: 11/1
 p_time: '16:30'
 p_length: 30
+materials:
+- title: "Paraductをエクストリームリリースします – @sue445"
+  url: http://www.slideshare.net/sue445/paraduct-428rk01
+- title: "ドキュメントの話、しませんか – @tk0miya"
+  url: http://www.slideshare.net/TakeshiKomiya/428rk01
+- title: "Zero to Oneが 何を教えてくれたか – @hokkai7go"
+  url: https://speakerdeck.com/hokkai7go/shibuyarubykaigi01-explanation-of-zero-to-one
+- title: "スペースの位置とか議論したくない - @sugamasao"
+  url: https://speakerdeck.com/sugamasao/supesufalsewei-zhi-tokayi-lun-sitakunai
 ---
 
 ## Shibuya LTとは
